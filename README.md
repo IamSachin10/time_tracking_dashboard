@@ -47,9 +47,7 @@ No local installation is required for this frontend app. Simply navigate to the 
   - **Social Hours:** Track the time spent socializing or engaging in social activities.
   - **Self-Care Hours:** Monitor and manage time dedicated to self-care activities.
 
-### Grid Section
 
-[Describe the grid section and any other features...]
 
 ## code snippet
 
@@ -101,7 +99,7 @@ export default App
 
 We value your feedback! If you have any suggestions for code improvements, new features, or alternative ways to achieve the same goals, please feel free to:
 
-- Open an issue on our [GitHub repository](link_to_issues) to report bugs or propose new features.
+- Open an issue on our [GitHub repository](https://github.com/IamSachin10/time_tracking_dashboard.git) to report bugs or propose new features.
 - Submit a pull request with your improvements. Check our [contribution guidelines](link_to_contributing.md) for more details.
 
 We appreciate your contributions and insights to make this project better!

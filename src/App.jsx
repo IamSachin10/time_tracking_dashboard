@@ -29,18 +29,19 @@ function App() {
   return (
     <>
       <header className="capitalize bg-darkBlue rounded-t-xl rounded-b-xl">
-        <div className="flex items-center justify-center bg-Blue gap-2 rounded-xl p-6">
-          <img
+        <div className="flex items-center justify-center bg-Blue gap-2 rounded-xl p-6
+        sm:flex-col sm:items-start sm:justify-start sm:gap-8 sm:h-[45vh] sm:w-[15vw]">
+          <div><img
             src={jeremyPicture}
             alt="admin-profile-picture"
-            className=" block w-16"
-          />
+            className=" block w-16 sm:border-[3px] sm:border-white sm:rounded-full"
+          /></div>
           <div>
-            <p>report for</p>
-            <h1>jeremy robson</h1>
+            <p className=" text-[#A9A9A9]">report for</p>
+            <h1 className="sm:text-4xl ">jeremy <span className="sm:block">robson</span></h1>
           </div>
         </div>
-        <div className="flex justify-between text-sm p-4 cursor-pointer text-desaturatedBlue">
+        <div className="flex justify-between text-sm p-4 cursor-pointer text-desaturatedBlue sm:flex-col sm:gap-4 ">
           <p
             className=" hover:text-white"
             onClick={() => clickHandler("daily")}
@@ -62,11 +63,11 @@ function App() {
         </div>
       </header>
       {/* dashboard */}
-      <section className="my-2 sm:grid sm:grid-cols-3 sm:gap-4">
+      <section className="my-2 sm:grid sm:grid-cols-3 sm:gap-4 sm:my-0">
         {jsonData.map((item, index) => (
           <article
             // className=" bg-LightRedWork rounded-b-xl rounded-t-xl my-2"
-            className={`rounded-b-xl rounded-t-xl my-2 ${
+            className={`rounded-b-xl rounded-t-xl my-2 sm:w-[14vw] sm:my-0 ${
               backgroundColors[index % backgroundColors.length]
             }`}
             key={item.id}
@@ -81,14 +82,14 @@ function App() {
             >
               {/* <img src="" alt="" /> */}
             </div>
-            <div className="bg-darkBlue rounded-t-xl rounded-b-xl px-4 py-8">
+            <div className="bg-darkBlue rounded-t-xl rounded-b-xl px-4 py-8 sm:h-[27vh]">
               <div className=" flex justify-between">
                 <h2>{item.title}</h2>
                 <p>...</p>
               </div>
               <div>
                 {hours === "daily" && (
-                  <div className=" flex justify-between">
+                  <div className=" flex justify-between sm:flex-col sm:mt-4">
                     <p>{item.timeframes.daily.current}hrs</p>
                     <p>last day - {item.timeframes.daily.previous}hrs</p>
                   </div>

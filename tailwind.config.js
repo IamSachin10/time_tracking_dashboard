@@ -19,7 +19,8 @@ export default {
         'veryDarkBlue': 'hsl(226,43%,10%)',
         'darkBlue': 'hsl(235,46%,20%)',
         'desaturatedBlue': 'hsl(235,45%,61%)',
-        'paleBlue': 'hsl(236,100%,87%)'
+        'paleBlue': 'hsl(236,100%,87%)',
+        'grayishLight': 'hsl(0, 0%, 93%)',
       },
       fontFamily: {
         'Rubik': ["'Rubik', serif"]
@@ -36,6 +37,9 @@ export default {
       },
       fontSize: {
         '18px': '1.125rem'
+      },
+      height: {
+        '50vh': '50vh'
       }
     },
   },

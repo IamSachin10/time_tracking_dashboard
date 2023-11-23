@@ -29,7 +29,7 @@ npm install react react-dom
 
 To access and explore the live version of the project, visit the following URL:
 
-[Live Demo](https://effulgent-panda-b78a4e.netlify.app/)
+[Live Demo](https://zingy-lokum-64d501.netlify.app/)
 
 No local installation is required for this frontend app. Simply navigate to the provided URL to experience the admin dashboard.
 
